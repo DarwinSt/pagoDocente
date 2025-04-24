@@ -25,6 +25,5 @@ pipeline {
         }
         failure {
             echo 'Falló una etapa del pipeline.'
-        }
-    }
+ }
 }
