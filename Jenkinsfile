@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clonar Repo') {
             steps {
-                git branch: 'main', url: 'https://github.com/DRAKOrar/DocentesBack.git'
+                git branch: 'main', url: 'https://github.com/DarwinSt/pagoDocente.git'
             }
         }
 
