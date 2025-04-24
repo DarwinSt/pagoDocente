@@ -13,17 +13,20 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
+
         stage('Test') {
             steps {
                 sh 'mvn clean test'
             }
         }
     }
+
     post {
         success {
             echo 'Pipeline finalizado exitosamente.'
         }
         failure {
             echo 'Falló una etapa del pipeline.'
- }
-}
+        }
+    }
+}  
